@@ -12,4 +12,8 @@ class My_test < Minitest::Test
 		options = ["Option One", "Option Two", "Option Three", "Option Four"]
 		assert_equal(2, pair(options))
 	end
+	def test_for_odd_pairs
+		options = ["Option One", "Option Two", "Option Three", "Option Four", "Option Five"]
+		assert_equal(2, pair(options))
+	end
 end
