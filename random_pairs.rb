@@ -2,17 +2,14 @@ def pair(options)
 	pairs = []
 	deeppair = []
 	count = 0
-	options.each do
-		if count <= 2
-			deeppair << options.sample
-			puts "deeppair deeppair"
-			count += 1
-		else
-			pair << deeppair
-			count = 0
-		end
+	while deeppair.length < 2
+		picked = options.sample
+		deeppair << picked
+		options.delete(picked)
 	end
-	puts "pair: #{pair}"
+	pairs << deeppair
+
+
 
 
 end
