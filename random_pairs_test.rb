@@ -24,5 +24,9 @@ class My_test < Minitest::Test
 		func = 1
 		assert_equal([], pair(options,func))
 	end
-
+	def test_for_25
+		options = ["Bill", "Steve", "Mary", "Davy", "Jones", "Colonel", "Crunchy", "Slappy", "Cornwall", "Leviticus", "John", "Captain", "Crispin", "Cirus", "Conan", "Brian", "Alphonse", "Corpus", "Brock", "Crumble", "Orca", "Applesauce", "Crusty", "Munchy", "Nobody"]
+		func = 0
+		assert_equal(12, pair(options,func))
+	end
 end
