@@ -17,6 +17,10 @@ class My_test < Minitest::Test
 	# 	assert_equal(2, pair(options))
 	def test_for_one_pair
 		options = ["Option One", "Option Two"]
-		assert_equal(([["Option One" , "Option Two"]] or [["Option Two", "Option One"]]), pair(options))
+		assert_equal(1, pair(options))
+	end
+	def test_for_two_pair
+		options = ["Option One", "Option Two", "Option Three", "Option Four"]
+		assert_equal(2, pair(options))
 	end
 end
