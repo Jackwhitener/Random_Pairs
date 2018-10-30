@@ -3,6 +3,8 @@ def pair(options)
 	pairs = []
 	deeppair = []
 	count = 0
+	half = options.length/2
+	half.times do
 	while deeppair.length < 2 && options.length > 0
 		picked = options.sample
 		deeppair << picked
@@ -11,5 +13,7 @@ def pair(options)
 	pairs << deeppair
 	deeppair = []
 	paircount += 1
+end
+	puts "Pairs: #{pairs}"
 	return paircount
 end
