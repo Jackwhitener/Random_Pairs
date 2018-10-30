@@ -1,4 +1,4 @@
-def pair(options)
+def pair(options,func)
 	paircount = 0
 	pairs = []
 	deeppair = []
@@ -15,5 +15,9 @@ def pair(options)
 	paircount += 1
 end
 	puts "Pairs: #{pairs}"
-	return paircount
+	if func == 0
+		return paircount
+	elsif func == 1
+		return options
+	end
 end
