@@ -4,6 +4,9 @@ def pair(options,func)
 	deeppair = []
 	count = 0
 	half = options.length/2
+	if options.class != Array
+		return "No."
+	else
 	half.times do
 	while deeppair.length < 2 && options.length > 0
 		picked = options.sample
@@ -23,5 +26,8 @@ end
 		return paircount
 	elsif func == 1
 		return options
+	else
+		return "No."
 	end
+end
 end
