@@ -6,6 +6,6 @@ class My_test < Minitest::Test
 	end
 	def test_for_number_of_pairs
 		options = ["Option One", "Option Two"]
-		assert_equal(1, options)
+		assert_equal(1, pair(options))
 	end
 end
