@@ -3,8 +3,16 @@ def pair(options)
 	deeppair = []
 	count = 0
 	options.each do
-		deeppair << options.sample
-		counter += 1
+		if count <= 2
+			deeppair << options.sample
+			puts "deeppair deeppair"
+			count += 1
+		else
+			pair << deeppair
+			count = 0
+		end
 	end
+	puts "pair: #{pair}"
+
 
 end
