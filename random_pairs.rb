@@ -14,6 +14,10 @@ def pair(options,func)
 	deeppair = []
 	paircount += 1
 end
+	if options != []
+		pairs.sample << options[0]
+		options.delete_at(0)
+	end
 	puts "Pairs: #{pairs}"
 	if func == 0
 		return paircount
