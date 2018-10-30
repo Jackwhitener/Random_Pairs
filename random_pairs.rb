@@ -1,3 +1,7 @@
 def pair(options)
-	return 1
+	counter = 0
+	options.each do
+		counter += 0.5
+	end
+	return counter
 end
