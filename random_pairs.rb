@@ -8,15 +8,15 @@ def pair(options,func)
 		return "No."
 	else
 	half.times do
-	while deeppair.length < 2 && options.length > 0
-		picked = options.sample
-		deeppair << picked
-		options.delete(picked)
+			while deeppair.length < 2 && options.length > 0
+				picked = options.sample
+				deeppair << picked
+				options.delete(picked)
+			end
+		pairs << deeppair
+		deeppair = []
+		paircount += 1
 	end
-	pairs << deeppair
-	deeppair = []
-	paircount += 1
-end
 	if options != []
 		pairs.sample << options[0]
 		options.delete_at(0)
