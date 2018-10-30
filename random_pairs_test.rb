@@ -29,4 +29,9 @@ class My_test < Minitest::Test
 		func = 0
 		assert_equal(12, pair(options,func))
 	end
+	def test_for_non_array_and_non_integer
+		options = "hey look at me, I'm a string"
+		func = "hey look at me, I'm a string"
+		assert_equal("No.", pair(options,func))
+	end
 end
